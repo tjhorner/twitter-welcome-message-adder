@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    environment:
+      - BASE_URL=https://welcome.horner.tj
+      - PORT=38215
+    ports:
+      - 38215

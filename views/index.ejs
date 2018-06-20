@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome Message Adder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/skeleton.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Authenticated as @<%= user.username %></h2>
+
+      <form method="post">
+        <label for="welcomeMessage">Welcome Message</label>
+        <textarea class="u-full-width" style="min-width: 100%; max-width: 100%" name="welcome_message" id="welcomeMessage"></textarea>
+        <input class="button-primary" type="submit" value="Set Welcome Message">
+        <a href="/remove" class="button">Remove Welcome Message</a>
+      </form>
+    </div>
+  </body>
+</html>
